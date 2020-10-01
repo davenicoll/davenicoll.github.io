@@ -1,12 +1,3 @@
 ---
 title: davenicoll.com
 timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: false
-  uploads:
-    title: Uploads
-    output: false
-
-theme: jekyll-theme-minimal
