@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello!</title>
+    <style>
+* {
+  margin: 0; 
+  padding: 0;
+}
+body {
+  background: black;
+}
+canvas {
+  display: block;
+}
+#canvas-wrap {
+  position: relative;
+}
+#canvas-wrap canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+#quoteUI {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid limegreen;
+    background-color:black;
+    -webkit-box-shadow:0px 1px 30px 15px rgba(16,173,2,0.5);
+    -moz-box-shadow:0px 1px 30px 15px rgba(16,173,2,0.5);
+    box-shadow:0px 1px 30px 15px rgba(16,173,2,0.5);
+}
+
+.quote {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: limegreen;
+  text-shadow: 0px 1px 25px limegreen;
+}
+
+.author {
+  font-family: "Press Start 2P";
+  font-size: 10px;
+  font-style: italic;
+  color: limegreen;
+  text-shadow: 0px 1px 25px limegreen;
+}
+
+.btn {
+  color: limegreen;
+}
+.btn:hover {
+  color: green;
+}
+
+.btn:active, .btn:focus {
+  color: limegreen;
+}
+
+#splashscreen {
+  min-height: 100%;
+  min-width: 100%;
+}
+h2 {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: white;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.blue {
+  color: #63adec;
+}
+.red {
+  color: #df3c00;
+}
+h3 {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  color: white;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 6s steps(60, end);
+}
+.cursor{
+  animation: blink 1s infinite;
+  color: white;
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.enter_link, .blue_link {
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+ <div id="splashscreen">
+    <h2 class="intro">This is your last chance. After this, there is no turning back. You take the <span class="blue">blue</span> pill - the story ends, you wake up in your bed and believe whatever you want to believe. You take the <span class="red">red</span> pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</h2><h3>Wake up, Neo...<span class="cursor">|</span></h2>
+    </div>
+  </body>
+</html>
