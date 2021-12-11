@@ -151,6 +151,107 @@ img {
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+  <script type="text/javascript">
+    //hide the extra pages
+$('div:not(#splashscreen)').hide();
+$("h3").hide();
+$('#splashscreen').appendTo('body');
+//make intro page fade out and main page fade in
+$(".enter_link").click(function(){
+        $("#canvas-wrap").fadeIn(6000);
+        $("#quoteUI, .block").fadeIn(9000);
+        $("#splashscreen").fadeOut(2000);
+    });
+//make intro page fade out and alternative end fade in
+$(".blue_link").click(function(){
+   $(".intro, img").fadeOut(2000, function(){
+        $("h3").fadeIn('slow');
+    });
+});
+/* ---------------------------CANVAS------------------------------------*/   
+var c = document.getElementById("c");
+var canvas = document.getElementById("canvas-wrap");
+var ctx = c.getContext("2d");
+
+//make the canvas full screen
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+
+//chinese characters - taken from the unicode charset
+var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+//converte the string into an array of single characters
+chinese = chinese.split("");
+
+var font_size = 10;
+var columns = c.width/font_size; //number of columns for the rain
+//an array of drops - one per column
+var drops = [];
+//x below is the x coordinate
+//1 = y co-ordinate of the drop(same for every drop initially)
+for(var x = 0; x < columns; x++)
+	drops[x] = 1; 
+
+//drawing the characters
+function draw()
+{
+	//Black BG for the canvas
+	//translucent BG to show trail
+	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+	ctx.fillRect(0, 0, c.width, c.height);
+	
+	ctx.fillStyle = "#0F0"; //green text
+	ctx.font = font_size + "px arial";
+	//looping over drops
+	for(var i = 0; i < drops.length; i++)
+	{
+		//a random chinese character to print
+		var text = chinese[Math.floor(Math.random()*chinese.length)];
+		//x = i*font_size, y = value of drops[i]*font_size
+		ctx.fillText(text, i*font_size, drops[i]*font_size);
+		
+		//send the drop back to the top randomly after it has crossed the screen
+		//add a randomness to the reset to make the drops scattered on the Y axis
+		if(drops[i]*font_size > c.height && Math.random() > 0.975)
+			drops[i] = 0;
+		
+		//increment Y coordinate
+		drops[i]++;
+	}
+}
+
+setInterval(draw, 33);
+
+/*--------------------------End of Canvas----------------------------------------*/
+/*----------Quote Array------------------------- */
+$(document).ready(function(){
+  var randomQuote;
+  var randomNum;
+  var randomAuthor;
   
+  function getQuote(){
+    var quotes = ['This is your last chance. After this, there is no turning back. You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.', 'To deny our own impulses is to deny the very thing that makes us human.', 'Do not try and bend the spoon. That\'s impossible. Instead... only try to realize the truth.', 'What is real? How do you define \'real\'? If you\'re talking about what you can feel, what you can smell, what you can taste and see, then \'real\' is simply electrical signals interpreted by your brain.', 'Have you ever had a dream, Neo, that you were so sure was real? What if you were unable to wake from that dream? How would you know the difference between the dream world and the real world?', 'Never send a human to do a machine\'s job.', 'I\'m trying to free your mind, Neo. But I can only show you the door. You\'re the one that has to walk through it.', 'I know why you\'re here, Neo. I know what you\'ve been doing... why you hardly sleep, why you live alone, and why night after night, you sit by your computer. You\'re looking for him. I know because I was once looking for the same thing. And when he found me, he told me I wasn\'t really looking for him. I was looking for an answer. It\'s the question that drives us, Neo. It\'s the question that brought you here. You know the question, just as I did.', 'I know what you\'re thinking, \'cause right now I\'m thinking the same thing. Actually, I\'ve been thinking it ever since I got here: Why oh why didn\'t I take the BLUE pill?', 'Tell me, Mr. Anderson... what good is a phone call... if you\'re unable to speak?', 'The image translators work for the construct program - but there\'s way too much information to decode the Matrix.', 'There\'s a difference between knowing the path and walking the path'];
+    var author = ['Morpheus', 'Mouse', 'Spoon boy', 'Morpheus', 'Morpheus', 'Agent Smith', 'Morpheus', 'Trinity', 'Cypher', 'Agent Smith', 'Cypher', 'Morpheus'];
+    // set a random value to the variables
+    var randomNum = Math.floor((Math.random()*quotes.length));
+    randomQuote = quotes[randomNum];
+    randomAuthor = author[randomNum];
+    
+    $(".quote").text(randomQuote);
+    $(".author").text(randomAuthor);
+    
+  }
+  //apply the random quote to tweeter window
+  $("#tweet").on("click", function(){
+    window.open("https://twitter.com/intent/tweet?text=" + randomQuote + " ~ " + randomAuthor);
+  });
+  //get a new quote every time you click
+  $("#newQuoteBtn").on("click", function(){
+    getQuote();
+  });
+  
+});
+  </script>
   </body>
 </html>
