@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
     <style>
 * {
   margin: 0; 
@@ -121,8 +123,31 @@ img {
     </style>
   </head>
   <body>
+    
  <div id="splashscreen">
     <h2 class="intro">This is your last chance. After this, there is no turning back. You take the <span class="blue">blue</span> pill - the story ends, you wake up in your bed and believe whatever you want to believe. You take the <span class="red">red</span> pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</h2><h3>Wake up, Neo...<span class="cursor">|</span></h2>
+   
+
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/ed/89/2a/ed892a0bfc4f18c263768d545df38f01.jpg" width="564" height="694" alt="Choice_Pills" usemap="#pillmap">
+
+<map name="pillmap">
+  <area shape="poly" coords="81,351,104,344,125,340,134,339,149,339,165,346,169,353,175,364,175,376,173,387,168,394,166,403,162,409,154,412,145,414,139,424,131,424,123,423,114,431,107,432,100,432,95,431,89,427,81,423,74,421,69,416,61,387,62,375,61,368,60,362,61,358" alt="Red" class="enter_link">
+<area shape="poly" coords="413,409,417,410,420,419,429,423,435,422,440,419,446,423,452,428,457,430,466,432,471,429,475,428,480,427,486,425,491,424,494,419,494,414,490,409,481,403,473,393,466,384,462,376,462,371,461,365,470,362,476,366,486,371,493,370,501,369,505,365,506,359,499,356,487,353,469,348,458,345,439,339,424,338,412,342,400,346,393,356,391,362,393,380,391,367,399,394,401,409" alt="Blue" class="blue_link">
+</map>
+   
+</div>
+<div id="canvas-wrap">
+<canvas id="c"></canvas>
+  <div id="quoteUI" class="container">
+    <span class="quote">Welcome to the Desert of the Real</span>
+    <footer class="author">Morpheus</footer>
+    <div class="block">
+          <a href="#" id="newQuoteBtn" class="btn">New Quote</a>
+          <a id="tweet" href="https://twitter.com/intent/tweet?" class="btn" target="_blank">Tweet Quote</a>
     </div>
+   </div>
+  </div>
+</div>
+
   </body>
 </html>
