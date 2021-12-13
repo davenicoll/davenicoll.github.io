@@ -41,6 +41,7 @@ canvas {
     -webkit-box-shadow:0px 1px 30px 15px rgba(16,173,2,0.5);
     -moz-box-shadow:0px 1px 30px 15px rgba(16,173,2,0.5);
     box-shadow:0px 1px 30px 15px rgba(16,173,2,0.5);
+    text-align: center;
 }
 
 .quote {
@@ -48,7 +49,6 @@ canvas {
   font-size: 20px;
   color: limegreen;
   text-shadow: 0px 1px 25px limegreen;
-  text-align: center;
 }
 
 .author {
@@ -141,12 +141,6 @@ img {
 <canvas id="c"></canvas>
   <div id="quoteUI" class="container">
     <span class="quote">I3pfbWVycnlfY2hyaXN0bWFzXzIwMjEK</span>
-	  <!--
-    <footer class="author">Morpheus</footer>
-    <div class="block">
-          <a href="#" id="newQuoteBtn" class="btn">New Quote</a>
-          <a id="tweet" href="https://twitter.com/intent/tweet?" class="btn" target="_blank">Tweet Quote</a>
-    </div>-->
    </div>
   </div>
 </div>
@@ -182,7 +176,7 @@ canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑🎄⛄🎁🦌🎅";
+var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑�";
 //converte the string into an array of single characters
 chinese = chinese.split("");
 
@@ -226,34 +220,6 @@ function draw()
 setInterval(draw, 33);
 
 /*--------------------------End of Canvas----------------------------------------*/
-/*----------Quote Array------------------------- */
-$(document).ready(function(){
-  var randomQuote;
-  var randomNum;
-  var randomAuthor;
-  
-  function getQuote(){
-    var quotes = ['You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.', 'To deny our own impulses is to deny the very thing that makes us human.', 'Do not try and bend the spoon. That\'s impossible. Instead... only try to realize the truth.', 'What is real? How do you define \'real\'? If you\'re talking about what you can feel, what you can smell, what you can taste and see, then \'real\' is simply electrical signals interpreted by your brain.', 'Have you ever had a dream, Neo, that you were so sure was real? What if you were unable to wake from that dream? How would you know the difference between the dream world and the real world?', 'Never send a human to do a machine\'s job.', 'I\'m trying to free your mind, Neo. But I can only show you the door. You\'re the one that has to walk through it.', 'I know why you\'re here, Neo. I know what you\'ve been doing... why you hardly sleep, why you live alone, and why night after night, you sit by your computer. You\'re looking for him. I know because I was once looking for the same thing. And when he found me, he told me I wasn\'t really looking for him. I was looking for an answer. It\'s the question that drives us, Neo. It\'s the question that brought you here. You know the question, just as I did.', 'I know what you\'re thinking, \'cause right now I\'m thinking the same thing. Actually, I\'ve been thinking it ever since I got here: Why oh why didn\'t I take the BLUE pill?', 'Tell me, Mr. Anderson... what good is a phone call... if you\'re unable to speak?', 'The image translators work for the construct program - but there\'s way too much information to decode the Matrix.', 'There\'s a difference between knowing the path and walking the path'];
-    var author = ['Morpheus', 'Mouse', 'Spoon boy', 'Morpheus', 'Morpheus', 'Agent Smith', 'Morpheus', 'Trinity', 'Cypher', 'Agent Smith', 'Cypher', 'Morpheus'];
-    // set a random value to the variables
-    var randomNum = Math.floor((Math.random()*quotes.length));
-    randomQuote = quotes[randomNum];
-    randomAuthor = author[randomNum];
-    
-    $(".quote").text(randomQuote);
-    $(".author").text(randomAuthor);
-    
-  }
-  //apply the random quote to tweeter window
-  $("#tweet").on("click", function(){
-    window.open("https://twitter.com/intent/tweet?text=" + randomQuote + " ~ " + randomAuthor);
-  });
-  //get a new quote every time you click
-  $("#newQuoteBtn").on("click", function(){
-    getQuote();
-  });
-  
-});
   </script>
   </body>
 </html>
