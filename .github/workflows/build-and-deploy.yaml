@@ -2,7 +2,7 @@ name: Deploy Ghost and Generate Static Site
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
