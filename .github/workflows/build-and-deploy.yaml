@@ -11,7 +11,7 @@ jobs:
       - name: Check out Model Repository
         uses: actions/checkout@v2
       - name: Run Ghost
-        run: docker run -d -p 2368:2368 -v ${{ github.workspace }}/content:/var/lib/ghost/content ghost:4.32-alpine
+        run: docker run -d -p 2368:2368 -v ${{ github.workspace }}/content:/var/lib/ghost/content ghost:4.47.4-alpine
       - name: Sleep for 10 seconds
         uses: jakejarvis/wait-action@master
         with:
