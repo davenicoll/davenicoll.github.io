@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="theme-light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upgrading my home NAS</title>
+    <link rel="stylesheet" href="/assets/built/screen.css?v=b43430217a">
+
+    <link rel="canonical" href="https://davenicoll.com/upgrading-my-home-nas/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    
+    <meta property="og:site_name" content="davenicoll.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Upgrading my home NAS" />
+    <meta property="og:description" content="I&#x27;ve been running various NAS devices for over a decade now. I started doing this because I always had PCs lying around, whether it was my last-gen desktop PC, or some old system I&#x27;d acquired from work. I think NAS&#x27;s in the home are underrated, as they&#x27;re so helpful for" />
+    <meta property="og:url" content="https://davenicoll.com/upgrading-my-home-nas/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1536412597336-ade7b523ecfc?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDU1fHx0ZWNobm9sb2d5fGVufDB8fHx8MTY5MTc4NTg0MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta property="article:published_time" content="2023-08-03T17:21:01.000Z" />
+    <meta property="article:modified_time" content="2023-11-09T06:46:35.000Z" />
+    <meta property="article:tag" content="nas" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Upgrading my home NAS" />
+    <meta name="twitter:description" content="I&#x27;ve been running various NAS devices for over a decade now. I started doing this because I always had PCs lying around, whether it was my last-gen desktop PC, or some old system I&#x27;d acquired from work. I think NAS&#x27;s in the home are underrated, as they&#x27;re so helpful for" />
+    <meta name="twitter:url" content="https://davenicoll.com/upgrading-my-home-nas/" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1536412597336-ade7b523ecfc?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDU1fHx0ZWNobm9sb2d5fGVufDB8fHx8MTY5MTc4NTg0MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Dave Nicoll" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="nas" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="3000" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "davenicoll.com",
+        "url": "https://davenicoll.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://davenicoll.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Dave Nicoll",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/e5d7bd9493760fdfaa9fcc3ed07ba91c?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://davenicoll.com/author/dave/",
+        "sameAs": []
+    },
+    "headline": "Upgrading my home NAS",
+    "url": "https://davenicoll.com/upgrading-my-home-nas/",
+    "datePublished": "2023-08-03T17:21:01.000Z",
+    "dateModified": "2023-11-09T06:46:35.000Z",
+    "keywords": "nas",
+    "description": "I&#x27;ve been running various NAS devices for over a decade now. I started doing this because I always had PCs lying around, whether it was my last-gen desktop PC, or some old system I&#x27;d acquired from work. I think NAS&#x27;s in the home are underrated, as they&#x27;re so helpful for various projects. Whether it&#x27;s providing fast access to family videos for editing, storing your favourite TV &amp; movies to stream to devices, or just needing somewhere safe for all your backups.\n\nWhen I moved from the UK to Canada ",
+    "mainEntityOfPage": "https://davenicoll.com/upgrading-my-home-nas/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.46" />
+    <link rel="alternate" type="application/rss+xml" title="davenicoll.com" href="https://davenicoll.com/rss/" />
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="092c7edf765c94505b7047fdb2" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://davenicoll.com/" crossorigin="anonymous"></script>
+    
+    <link href="https://davenicoll.com/webmentions/receive/" rel="webmention" />
+    <script defer src="/public/cards.min.js?v=b43430217a"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=b43430217a">
+    <style type='text/css'>
+    
+    a.gh-head-button,
+    #ghost-portal-root,
+    .footer-cta,
+    .gh-head-actions,
+    .gh-subscribe,
+    .gh-foot-menu, 
+    .gh-powered-by,
+    .cover-cta,
+    .social-item-facebook,
+    .social-item-twitter,
+    .header-right,
+    .copyright,
+    .footer-nav { display: none; }
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.css" integrity="sha512-Dqf5696xtofgH089BgZJo2lSWTvev4GFo+gA2o4GullFY65rzQVQLQVlzLvYwTo0Bb2Gpb6IqwxYWtoMonfdhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+    
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #c5c8c6;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: "JetBrains Mono", Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #1d1f21;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7C7C7C;
+}
+
+.token.punctuation {
+	color: #c5c8c6;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.keyword,
+.token.tag {
+	color: #96CBFE;
+}
+
+.token.class-name {
+	color: #FFFFB6;
+	text-decoration: underline;
+}
+
+.token.boolean,
+.token.constant {
+	color: #99CC99;
+}
+
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.number {
+	color: #FF73FD;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #A8FF60;
+}
+
+.token.variable {
+	color: #C6C5FE;
+}
+
+.token.operator {
+	color: #EDEDED;
+    background-color: #1d1f21;
+}
+
+.token.entity {
+	color: #FFFFB6;
+	cursor: help;
+}
+
+.token.url {
+	color: #96CBFE;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #87C38A;
+}
+
+.token.atrule,
+.token.attr-value {
+	color: #F9EE98;
+}
+
+.token.function {
+	color: #DAD085;
+}
+
+.token.regex {
+	color: #E9C062;
+}
+
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+</style>
+<style>:root {--ghost-accent-color: #ff572f;}</style>
+</head>
+
+<body class='post-template tag-nas is-head-left-logo'>
+<div class="site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner gh-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://davenicoll.com">
+                            davenicoll.com
+                    </a>
+                </div>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://davenicoll.com/">Home</a></li>
+    <li class="nav-about"><a href="https://davenicoll.com/about/">About</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+            </div>
+        </div>
+    </header>
+
+
+    <div class="site-content">
+        
+<main class="site-main">
+
+        <article class="single post tag-nas no-image">
+
+
+    <div class="single-content gh-content gh-canvas">
+        <p>I've been running various NAS devices for over a decade now. I started doing this because I always had PCs lying around, whether it was my last-gen desktop PC, or some old system I'd acquired from work. I think NAS's in the home are underrated, as they're so helpful for various projects. Whether it's providing fast access to family videos for editing, storing your favourite TV &amp; movies to stream to devices, or just needing somewhere safe for all your backups.</p><p>When I moved from the UK to Canada in 2021, I downsized from several Dell PowerEdge 720s, uploaded my data to GSuite Business (thanks to Google ignoring storage capacity limits for several years), and took a single 16TB disk with me on my travels. When I arrived in Canada, I wanted a low-maintenance NAS, with the ability to run containers, stream and transcode media, and was small enough to be moved easily. Having used Synology products before, I bought a <a href="https://www.storagereview.com/review/synology-diskstation-ds720-review?ref=localhost">Synology DiskStation DS720+</a>, added a second 16TB NAS disk, increased the memory with an 8GB RAM module, and installed 2xM.2 drives for caching.</p><p>While Synology hardware may not be anything extraordinary, their software is top-notch. OpenMediaVault, EasyNAS, FreeNAS/TrueNAS, Proxmox, Unraid, Windows(!) - I've operated them all, and nobody in the homelab/prosumer market comes close to the simplicity, capability, or app ecosystem that Synology has created with <a href="https://www.synology.com/en-ca/dsm?ref=localhost">DiskStation Manager</a> (DSM). If you're reading this guide, and you're interested in a NAS, but building one looks like too much effort, <a href="https://www.synology.com/en-ca/products?product_line=ds_plus&ref=localhost">go buy a Synology</a>.</p><p>Life was good! Until the day Google emailed and informed me they were <a href="https://www.reddit.com/r/DataHoarder/comments/13kr75h/google_enforcing_storage_limit_on_old_gsuite/?ref=localhost">starting to enforce storage capacity limits in my GSuite account</a>. I had 30 days to meet the paltry limit or pay a hefty monthly cost. So, after doing some math[s], I figured, "why not buy a new NAS, increase my local storage capacity, and reduce my cloud spend".</p><h3 id="requirements">Requirements</h3><p>Build vs Buy is always a factor when choosing technology, and I was leaning towards another, larger Synology. Apart from the lack of bays, the biggest disappointment of the DS720+ was the 2x 1GbE ports. My inner nerd was calling, I could build something better, faster, cheaper, so I made a list of my requirements:</p><ul><li>Small form factor</li><li>Passively-cooled CPU, or very quiet fans for near-silent operation</li><li>Capacity for 5 drives</li><li>Enough CPU/GPU for media transcoding</li><li>Power efficient</li></ul><h3 id="motherboard-and-cpu">Motherboard and CPU</h3><p>I first heard about the <a href="https://www.aliexpress.com/item/1005004878607032.html?ref=localhost">Topton N5105 "NAS" motherboard</a> on Reddit. The reviews were generally positive, and the specs looked to be a great fit for my requirements. Searching for "N5105 NAS motherboard" on Aliexpress results in several variations. I eventually bought the <a href="https://www.aliexpress.com/item/1005005239181127.html?ref=localhost">BKHD version</a>, with these specs:</p><ul><li>Integrated <a href="https://www.intel.com/content/www/us/en/products/sku/212328/intel-celeron-processor-n5105-4m-cache-up-to-2-90-ghz/specifications.html?ref=localhost">Intel Celeron N5105</a> (Jasper Lake) CPU 2Ghz TDP 10W</li><li>1x M.2 NVMe (PCIe 3.0 x1) 2280</li><li>6x SATA 3.0 ports</li><li>4x Intel i226-V 2.5Gbps network interfaces</li><li>2x SO-DIMM DDR4 (2933Mhz) slots, 64GB max</li><li>1x PCI-E slot</li><li>HDMI and Display Port</li><li>Onboard sound</li><li>Mini-ITX form factor</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://davenicoll.com/content/images/2023/08/image.png" class="kg-image" alt loading="lazy" width="2000" height="2000" srcset="https://davenicoll.com/content/images/size/w600/2023/08/image.png 600w, https://davenicoll.com/content/images/size/w1000/2023/08/image.png 1000w, https://davenicoll.com/content/images/size/w1600/2023/08/image.png 1600w, https://davenicoll.com/content/images/size/w2400/2023/08/image.png 2400w" sizes="(min-width: 720px) 720px"><figcaption>BKHD N5105 motherboard</figcaption></figure><p>The board is PERFECT for my needs, especially as the Celeron N5105 has an Intel UHD i915 GPU with video encoding/decoding built-in. For the price (CAD$189/US$140/GBP£110), the board is excellent value too. (I did consider the Celeron J6412, but its newer chipset is less well-supported and, in several ways, a weaker version of the N5105). Shipping took a month thanks to a delay at customs, but BKHD customer support was helpful and responsive.</p><h3 id="case-and-power-supply">Case and power supply</h3><p>Good NAS cases can be hard to come by, and I'm not sure if it was due to the pandemic, but I had a tough time finding one at the right price point. But, I did! A coworker recommended a <a href="https://www.jonsbo.com/en/products/N1.html?ref=localhost">Jonsbo N1</a>, and while it looked great from the outside, it was a mess internally and he admitted that putting all together had been a delicate affair. Then I noticed the <a href="https://www.jonsbo.com/en/products/N2Black.html?ref=localhost">Jonsbo N2</a> on their website. ITX form factor? Check! 5+1 bays? Check! Priced sensibly? Check!</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://davenicoll.com/content/images/2023/08/image-3.png" class="kg-image" alt loading="lazy" width="1600" height="800" srcset="https://davenicoll.com/content/images/size/w600/2023/08/image-3.png 600w, https://davenicoll.com/content/images/size/w1000/2023/08/image-3.png 1000w, https://davenicoll.com/content/images/2023/08/image-3.png 1600w" sizes="(min-width: 720px) 720px"><figcaption>Jonsbo N2 case</figcaption></figure><p>I paired the Jonsbo N2 with a <a href="https://www.corsair.com/ca/en/p/psu/cp-9020186-na/sf-series-sf750-750-watt-80-plus-platinum-certified-high-performance-sfx-psu-cp-9020186-na?ref=localhost">Corsair SF750</a> modular PSU which fits snuggly and has all the necessary connections. While the case has a front-panel with cables for USB-C and audio, the motherboard doesn't have the corresponding headers, so I zip-tied the cables out of the way. Right-angle connectors on the SATA cables were essential, as it's a tight fit between the drive backplane and the rear fan. Speaking of the rear fan (a generic 120x15 fan), it was louder than I could tolerate - so I replaced it with the <a href="https://noctua.at/en/nf-a12x15-pwm?ref=localhost">Noctua equivalent</a>, and now I can barely hear it all.</p><h3 id="ram">RAM</h3><p>The N5105 motherboard has two DDR4 SO-DIMM slots, which I maxed out with <a href="https://www.crucial.com/memory/ddr4/ct2k32g4sfd832a?ref=localhost">64GB non-ECC 3200Mhz RAM from Crucial</a>. Yes, it's non-ECC, not ideal, but I have other mitigations to avoid data corruption.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://davenicoll.com/content/images/2023/08/image-4.png" class="kg-image" alt loading="lazy" width="1024" height="537" srcset="https://davenicoll.com/content/images/size/w600/2023/08/image-4.png 600w, https://davenicoll.com/content/images/size/w1000/2023/08/image-4.png 1000w, https://davenicoll.com/content/images/2023/08/image-4.png 1024w" sizes="(min-width: 720px) 720px"><figcaption>Crucial 64GB 3200Mhz DDR4 SO-DIMM memory modules</figcaption></figure><h3 id="storage">Storage</h3><p>There's two types of storage in my NAS; the boot drive and data storage drives. I installed a 1TB NVMe drive as my boot drive, partitioned into a 64GB boot partition with TrueNAS SCALE installed, and the remaining space for apps, swap, etc. 1TB was probably overkill, but I had one spare from a previous project.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://davenicoll.com/content/images/2023/08/ironwolfpro.png" class="kg-image" alt loading="lazy" width="2000" height="1364" srcset="https://davenicoll.com/content/images/size/w600/2023/08/ironwolfpro.png 600w, https://davenicoll.com/content/images/size/w1000/2023/08/ironwolfpro.png 1000w, https://davenicoll.com/content/images/size/w1600/2023/08/ironwolfpro.png 1600w, https://davenicoll.com/content/images/2023/08/ironwolfpro.png 2200w" sizes="(min-width: 720px) 720px"><figcaption>IronWolf Pro 16TB HDD</figcaption></figure><p>I already had 3x <a href="https://www.seagate.com/www-content/datasheets/pdfs/ironwolf-pro-16tb-DS1914-10-1905US-en_US.pdf?ref=localhost">IronWolf Pro 16TB HDDs</a> for data storage, so I configured two to be mirrored (the data I care about) and one as a standalone stripe (for the data I don't). Would I recommend the IronWolf Pro disks? <a href="https://realhardwarereviews.com/seagate-ironwolf-pro-16tb-review/?ref=localhost">Absolutely</a>. They're performant and reliable, have a great warranty backed by a data recovery option, and are priced reasonably now that we're past the worst of Covid. <a href="https://diskprices.com/?ref=localhost">There are cheaper options out there</a> if you wanted to shop around.</p><h3 id="truenas-scale">TrueNAS SCALE</h3><p>My biggest concern was moving away from Synology DSM. Having previously run <a href="https://www.truenas.com/truenas-core/?ref=localhost">TrueNAS Core</a> (FreeNAS), I know it's a solid NAS OS, but it's no DSM. I was also never that fond of FreeBSD and jails in TrueNAS Core. My interest was immediately piqued when I heard about <a href="https://www.truenas.com/truenas-scale/?ref=localhost">TrueNAS SCALE</a>, a new offering based on Debian with K3s (or Docker, if you prefer). </p><p>In my opinion, TrueNAS SCALE is a great option, and while there's certainly a learning curve the first time around, once running, it's pretty close to DSM in terms of ease of use.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://davenicoll.com/content/images/2023/08/image-9.png" class="kg-image" alt loading="lazy" width="1000" height="452" srcset="https://davenicoll.com/content/images/size/w600/2023/08/image-9.png 600w, https://davenicoll.com/content/images/2023/08/image-9.png 1000w" sizes="(min-width: 720px) 720px"><figcaption>TrueNAS SCALE dashboard</figcaption></figure><p>I <a href="https://www.reddit.com/r/truenas/comments/lgf75w/scalehowto_split_ssd_during_installation/?ref=localhost">partitioned the NVMe boot drive</a>, installed TrueNAS SCALE, setup my disk pools, vdevs, and sharing services. When I installed Plex though, I discovered something concerning. Despite configuring the Plex container with my PlexPass and enabling GPU support, playback of transcoded videos maxed out the CPU. Googling around, I discovered that the Linux kernel version in TrueNAS SCALE doesn't support the i915 GPU. Thankfully, Intel has backported the driver, <a href="https://gist.github.com/davenicoll/d54f155d0d0e8af427d7763cc5c425c9?ref=localhost">so I cloned the repo, built it and installed it</a>. A reboot later, and the GPU was handling transcoding with ease.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://davenicoll.com/content/images/2023/08/image-10.png" class="kg-image" alt loading="lazy" width="1024" height="566" srcset="https://davenicoll.com/content/images/size/w600/2023/08/image-10.png 600w, https://davenicoll.com/content/images/size/w1000/2023/08/image-10.png 1000w, https://davenicoll.com/content/images/2023/08/image-10.png 1024w" sizes="(min-width: 720px) 720px"><figcaption>TrueNAS SCALE apps</figcaption></figure><h3 id="costs">Costs</h3><!--kg-card-begin: markdown--><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motherboard</td>
+<td>CAD$189</td>
+</tr>
+<tr>
+<td>Case</td>
+<td>CAD$134</td>
+</tr>
+<tr>
+<td>PSU</td>
+<td>CAD$188</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>CAD$164</td>
+</tr>
+<tr>
+<td>Fan + SATA cables</td>
+<td>CAD$38</td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><strong>CAD$713/US$534/GBP£420</strong></td>
+</tr>
+</tbody>
+</table>
+<!--kg-card-end: markdown--><h3 id="what-do-i-think-of-the-nas">What do I think of the NAS?</h3><p>It's exactly what I set out to build; a power-efficient, fast, easy-to-use NAS with plenty of options to expand storage. </p><p>The case has been a joy to work with, and I'd use it again for a different mini build (with a quieter fan, of course). It saturates my home network, and I love working with it for video editing. With an embedded CPU on the motherboard, I won't be upgrading it, but that's not an issue for me. I expect I'll get at least 3-4 years of use from this NAS, maybe longer, who knows.</p><p>Lastly, this build was not expensive. A Synology 4-bay DS920+ without any disks retails for CAD$1,399! </p>
+
+        <div>
+            <span class="single-meta-item single-meta-date">
+                <time datetime="2023-08-03">
+                    August 3, 2023
+                </time>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="gh-canvas">
+    <footer class="single-footer">
+
+        <div class="single-footer-left">
+            <div class="navigation navigation-previous">
+                <a class="navigation-link" href="/how-to-ask-for-help/" aria-label="Previous post">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon navigation-icon">
+    <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
+</svg>                </a>
+            </div>
+        </div>
+
+        <div class="single-footer-middle">
+            <div class="single-footer-top">
+                <h3 class="single-footer-title">Published by:</h3>
+                <div class="author-list">
+                    <div class="author-image-placeholder u-placeholder square">
+                        <a href="/author/dave/" title="Dave Nicoll">
+                            <img class="author-image u-object-fit" src="//www.gravatar.com/avatar/e5d7bd9493760fdfaa9fcc3ed07ba91c?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Dave Nicoll" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-footer-right">
+        </div>
+
+    </footer>
+    </div>
+
+</article>
+            
+            
+</main>
+    </div>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <div class="foot-statement">
+                🄯 davenicoll.com, 2023. No cookie consent. No adverts. No paywalls. <em>Long live the web!</em>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src='/assets/built/main.min.js?v=b43430217a'></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre[class*=language-]').forEach(function (node) {
+            node.classList.add('line-numbers');
+        });
+        Prism.highlightAll();
+    });
+</script>
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3286122,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-st608h+ZqzliahyzEpETxzU0f7z7a9acN6AFvYmHvpFhmcFuKT8a22TT5TpKpjDa3pt3Wv7Z3SdQBCBdDPhyWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-BttltKXFyWnGZQcRWj6osIg7lbizJchuAMotOkdLxHxwt/Hyo+cl47bZU0QADg+Qt5DJwni3SbYGXeGMB5cBcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-/kVH1uXuObC0iYgxxCKY41JdWOkKOxorFVmip+YVifKsJ4Au/87EisD1wty7vxN2kAhnWh6Yc8o/dSAXj6Oz7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
