@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>technology - davenicoll.com</title>
+    <link rel="stylesheet" href="/assets/built/screen.css?v=95ad2aeaee">
+
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast was taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="canonical" href="https://davenicoll.com/tag/technology/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="davenicoll.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="technology - davenicoll.com">
+    <meta property="og:url" content="https://davenicoll.com/tag/technology/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1536412597336-ade7b523ecfc?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDU1fHx0ZWNobm9sb2d5fGVufDB8fHx8MTY5MTc4NTg0MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="technology - davenicoll.com">
+    <meta name="twitter:url" content="https://davenicoll.com/tag/technology/">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1536412597336-ade7b523ecfc?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;M3wxMTc3M3wwfDF8c2VhcmNofDU1fHx0ZWNobm9sb2d5fGVufDB8fHx8MTY5MTc4NTg0MHww&amp;ixlib&#x3D;rb-4.0.3&amp;q&#x3D;80&amp;w&#x3D;2000">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="3000">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Series",
+    "publisher": {
+        "@type": "Organization",
+        "name": "davenicoll.com",
+        "url": "https://davenicoll.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://davenicoll.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "url": "https://davenicoll.com/tag/technology/",
+    "name": "technology",
+    "mainEntityOfPage": "https://davenicoll.com/tag/technology/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.72">
+    <link rel="alternate" type="application/rss+xml" title="davenicoll.com" href="https://davenicoll.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="092c7edf765c94505b7047fdb2" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://davenicoll.com/" crossorigin="anonymous"></script>
+    
+    <link href="https://davenicoll.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=95ad2aeaee"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=95ad2aeaee">
+    <style type='text/css'>
+    
+    a.gh-head-button,
+    #ghost-portal-root,
+    .footer-cta,
+    .gh-head-actions,
+    .gh-subscribe,
+    .gh-foot-menu, 
+    .gh-powered-by,
+    .cover-cta,
+    .social-item-facebook,
+    .social-item-twitter,
+    .header-right,
+    .copyright,
+    .footer-nav { display: none; }
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.css" integrity="sha512-Dqf5696xtofgH089BgZJo2lSWTvev4GFo+gA2o4GullFY65rzQVQLQVlzLvYwTo0Bb2Gpb6IqwxYWtoMonfdhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+    
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #c5c8c6;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: "JetBrains Mono", Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #1d1f21;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7C7C7C;
+}
+
+.token.punctuation {
+	color: #c5c8c6;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.keyword,
+.token.tag {
+	color: #96CBFE;
+}
+
+.token.class-name {
+	color: #FFFFB6;
+	text-decoration: underline;
+}
+
+.token.boolean,
+.token.constant {
+	color: #99CC99;
+}
+
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.number {
+	color: #FF73FD;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #A8FF60;
+}
+
+.token.variable {
+	color: #C6C5FE;
+}
+
+.token.operator {
+	color: #EDEDED;
+    background-color: #1d1f21;
+}
+
+.token.entity {
+	color: #FFFFB6;
+	cursor: help;
+}
+
+.token.url {
+	color: #96CBFE;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #87C38A;
+}
+
+.token.atrule,
+.token.attr-value {
+	color: #F9EE98;
+}
+
+.token.function {
+	color: #DAD085;
+}
+
+.token.regex {
+	color: #E9C062;
+}
+
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+</style>
+<style>:root {--ghost-accent-color: #ff572f;}</style>
+</head>
+
+<body class="tag-template tag-technology is-head-left-logo has-classic-feed">
+<div class="gh-site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner gh-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://davenicoll.com">
+                            davenicoll.com
+                    </a>
+                </div>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://davenicoll.com/">Home</a></li>
+    <li class="nav-about"><a href="https://davenicoll.com/about/">About</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+            </div>
+        </div>
+    </header>
+
+    
+<main class="gh-main gh-outer">
+        <section class="gh-article gh-inner">
+            <header class="gh-article-header">
+                <h1 class="gh-article-title">technology</h1>
+                            </header>
+        </section>
+    <div class="gh-feed gh-inner">
+            <article class="gh-card post tag-technology tag-hardware tag-software tag-steamdeck tag-coffee tag-mac">
+    <a class="gh-card-link" href="/things-i-use/">
+
+            <figure class="gh-card-image">
+                    <img
+                        
+                        srcset="/content/images/size/w300/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 300w,
+                                /content/images/size/w720/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 720w,
+                                /content/images/size/w960/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 960w,
+                                /content/images/size/w1200/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 1200w,
+                                /content/images/size/w2000/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 2000w"
+                        sizes="(max-width: 1200px) 100vw, 1200px"
+                        src="/content/images/size/w720/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg"
+                        alt="Things I use"
+                    >
+            </figure>
+
+        <div class="gh-card-wrapper">
+            <h2 class="gh-card-title">Things I use</h2>
+            <footer class="gh-card-meta">
+                <time class="gh-card-date" datetime="2024-01-09">Jan 9, 2024</time>
+                    <span class="gh-card-length">2 min read</span>
+            </footer>
+        </div>
+
+    </a>
+</article>    </div>
+</main>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-contact"><a href="https://davenicoll.com/contact/">Contact</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-copyright">
+                    davenicoll.com © 2024. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="/assets/built/main.min.js?v=95ad2aeaee"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre[class*=language-]').forEach(function (node) {
+            node.classList.add('line-numbers');
+        });
+        Prism.highlightAll();
+    });
+</script>
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3286122,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-st608h+ZqzliahyzEpETxzU0f7z7a9acN6AFvYmHvpFhmcFuKT8a22TT5TpKpjDa3pt3Wv7Z3SdQBCBdDPhyWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-BttltKXFyWnGZQcRWj6osIg7lbizJchuAMotOkdLxHxwt/Hyo+cl47bZU0QADg+Qt5DJwni3SbYGXeGMB5cBcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-/kVH1uXuObC0iYgxxCKY41JdWOkKOxorFVmip+YVifKsJ4Au/87EisD1wty7vxN2kAhnWh6Yc8o/dSAXj6Oz7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

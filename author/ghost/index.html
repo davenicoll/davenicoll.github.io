@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html class="theme-light" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ghost - davenicoll.com</title>
-    <link rel="stylesheet" href="/assets/built/screen.css?v=1470c97bd3">
+    <link rel="stylesheet" href="/assets/built/screen.css?v=95ad2aeaee">
+
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast was taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
 
     <meta name="description" content="You can delete this user to remove all the welcome posts">
     <link rel="canonical" href="https://davenicoll.com/author/ghost/">
@@ -45,8 +66,8 @@
     <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="092c7edf765c94505b7047fdb2" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://davenicoll.com/" crossorigin="anonymous"></script>
     
     <link href="https://davenicoll.com/webmentions/receive/" rel="webmention">
-    <script defer src="/public/cards.min.js?v=1470c97bd3"></script>
-    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=1470c97bd3">
+    <script defer src="/public/cards.min.js?v=95ad2aeaee"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=95ad2aeaee">
     <style type='text/css'>
     
     a.gh-head-button,
@@ -217,8 +238,8 @@ pre[class*="language-"] {
 <style>:root {--ghost-accent-color: #ff572f;}</style>
 </head>
 
-<body class='author-template author-ghost is-head-left-logo'>
-<div class="site">
+<body class="author-template author-ghost is-head-left-logo has-classic-feed">
+<div class="gh-site">
 
     <header id="gh-head" class="gh-head gh-outer">
         <div class="gh-head-inner gh-inner">
@@ -228,6 +249,10 @@ pre[class*="language-"] {
                             davenicoll.com
                     </a>
                 </div>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
                 <button class="gh-burger"></button>
             </div>
 
@@ -240,58 +265,52 @@ pre[class*="language-"] {
             </nav>
 
             <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
             </div>
         </div>
     </header>
 
-
-    <div class="site-content">
-        
-<main class="site-main">
-
-    <section class="author gh-canvas">
-
-        <div class="author-image-placeholder u-placeholder square">
-            <img class="author-image u-object-fit" src="https://static.ghost.org/v4.0.0/images/ghost-user.png" alt="Ghost">
-        </div>
-
-            <h1 class="author-name">
-                <a href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
-            </h1>
-
-            <span class="author-meta">The Internet</span>
-
-        <div class="author-bio">You can delete this user to remove all the welcome posts</div>
-
-        <div class="share author-social">
-                <a class="share-link share-link-facebook author-social-item" href="https://www.facebook.com/ghost" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon icon-facebook">
-    <path d="M22.667 2.667V8H20c-.92 0-1.333 1.08-1.333 2v3.333h4v5.333h-4v10.667h-5.333V18.666h-4v-5.333h4V8a5.332 5.332 0 0 1 5.333-5.333h4z"></path>
-</svg>                    Facebook
-                </a>
-                <a class="share-link share-link-twitter author-social-item" href="https://twitter.com/ghost" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="icon icon-twitter">
-    <path d="M29.947 8a11.423 11.423 0 0 1-3.28.92 5.738 5.738 0 0 0 2.507-3.173 11.52 11.52 0 0 1-3.627 1.4C24.494 6 23.014 5.334 21.334 5.334c-3.133 0-5.693 2.56-5.693 5.72 0 .453.053.893.147 1.307A16.261 16.261 0 0 1 4.001 6.388a5.663 5.663 0 0 0-.773 2.867c0 1.987 1 3.747 2.547 4.747-.947 0-1.827-.267-2.6-.667v.04a5.724 5.724 0 0 0 4.587 5.613 5.644 5.644 0 0 1-2.574.093c.72 2.253 2.813 3.933 5.333 3.973-1.947 1.547-4.413 2.453-7.107 2.453-.453 0-.907-.027-1.36-.08A16.19 16.19 0 0 0 10.827 28c10.507 0 16.28-8.72 16.28-16.28 0-.253 0-.493-.013-.747A11.42 11.42 0 0 0 29.947 8z"></path>
-</svg>                    Twitter
-                </a>
-        </div>
-
-    </section>
-
-    <div class="post-feed gh-feed gh-canvas">
+    
+<main class="gh-main gh-outer">
+        <section class="gh-article gh-inner">
+            <header class="gh-article-header">
+                    <img class="gh-author-image" src="https://static.ghost.org/v4.0.0/images/ghost-user.png" alt="Ghost">
+                <h1 class="gh-article-title">Ghost</h1>
+                    <p class="gh-article-excerpt">You can delete this user to remove all the welcome posts</p>
+            </header>
+            <footer class="gh-author-meta">
+                    <div class="gh-author-location">The Internet</div>
+                <div class="gh-author-social">
+                        <a class="gh-author-social-link" href="https://ghost.org" target="_blank" rel="noopener">https://ghost.org</a>
+                        <a class="gh-author-social-link" href="https://twitter.com/ghost" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.9687 3.04665C15.3697 3.31039 14.7351 3.48448 14.0853 3.56332C14.7694 3.15215 15.2816 2.50735 15.5273 1.74799C14.8933 2.11799 14.1907 2.38732 13.4427 2.53732C12.9492 2.00961 12.2952 1.6596 11.5824 1.54165C10.8696 1.42371 10.1378 1.54442 9.50062 1.88505C8.86345 2.22567 8.35657 2.76715 8.0587 3.4254C7.76083 4.08365 7.68864 4.82183 7.85333 5.52532C5.12667 5.39665 2.71133 4.08665 1.09333 2.10799C0.799196 2.60786 0.645776 3.178 0.649333 3.75799C0.649333 4.89799 1.22933 5.89999 2.108 6.48865C1.58724 6.47208 1.07798 6.33128 0.622667 6.07799V6.11799C0.622371 6.87558 0.884179 7.60995 1.36367 8.19649C1.84316 8.78304 2.51081 9.18564 3.25333 9.33599C2.7722 9.46491 2.26828 9.48427 1.77867 9.39265C1.98941 10.0447 2.39844 10.6146 2.94868 11.023C3.49891 11.4314 4.1629 11.6578 4.848 11.6707C3.68769 12.5813 2.25498 13.0755 0.78 13.074C0.52 13.074 0.260667 13.0587 0 13.0293C1.50381 13.9922 3.25234 14.5033 5.038 14.502C11.0733 14.502 14.37 9.50465 14.37 5.17865C14.37 5.03865 14.37 4.89865 14.36 4.75865C15.004 4.29523 15.5595 3.71987 16 3.05999L15.9687 3.04665Z" fill="currentColor"/>
+</svg>
+</a>
+                        <a class="gh-author-social-link" href="https://www.facebook.com/ghost" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8.04865C16 3.63065 12.418 0.048645 8 0.048645C3.582 0.048645 0 3.63065 0 8.04865C0 12.042 2.92533 15.3513 6.75 15.9513V10.3613H4.71867V8.04798H6.75V6.28665C6.75 4.28198 7.94467 3.17398 9.772 3.17398C10.6467 3.17398 11.5627 3.33065 11.5627 3.33065V5.29931H10.5533C9.55933 5.29931 9.24933 5.91598 9.24933 6.54865V8.04865H11.468L11.1133 10.362H9.24933V15.952C13.0747 15.3513 16 12.0413 16 8.04865Z" fill="currentColor"/>
+</svg>
+</a>
+                </div>
+            </footer>
+        </section>
+    <div class="gh-feed gh-inner">
     </div>
-
-    <nav class="load-more">
-    <button class="button button-secondary gh-loadmore">Load more</button>
-</nav>
-
 </main>
-    </div>
 
     <footer class="gh-foot gh-outer">
         <div class="gh-foot-inner gh-inner">
-            <div class="foot-statement">
-                🄯 davenicoll.com, 2023. No cookie consent. No adverts. No paywalls. <em>Long live the web!</em>
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-contact"><a href="https://davenicoll.com/contact/">Contact</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-copyright">
+                    davenicoll.com © 2024. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
             </div>
         </div>
     </footer>
@@ -299,12 +318,7 @@ pre[class*="language-"] {
 </div>
 
 
-<script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous">
-</script>
-<script src='/assets/built/main.min.js?v=1470c97bd3'></script>
+<script src="/assets/built/main.min.js?v=95ad2aeaee"></script>
 
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
@@ -331,4 +345,5 @@ pre[class*="language-"] {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-/kVH1uXuObC0iYgxxCKY41JdWOkKOxorFVmip+YVifKsJ4Au/87EisD1wty7vxN2kAhnWh6Yc8o/dSAXj6Oz7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
+
 </html>

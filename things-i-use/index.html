@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Things I use</title>
+    <link rel="stylesheet" href="/assets/built/screen.css?v=95ad2aeaee">
+
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast was taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="canonical" href="https://davenicoll.com/things-i-use/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="davenicoll.com">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Things I use">
+    <meta property="og:description" content="Tech
+
+
+Hardware
+
+ * MacBook Pro 2019 (Intel i7) - still going, despite the fans running at ~100% for as long as I can remember. I&#x27;ll be upgrading to Apple silicon this year, so this&#x27;ll become end-of-life.
+ * CalDigit TS-4 dock - this allows me to plug a single USB-C cable into any">
+    <meta property="og:url" content="https://davenicoll.com/things-i-use/">
+    <meta property="og:image" content="https://davenicoll.com/content/images/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg">
+    <meta property="article:published_time" content="2024-01-09T18:24:15.000Z">
+    <meta property="article:modified_time" content="2024-01-09T18:24:15.000Z">
+    <meta property="article:tag" content="technology">
+    <meta property="article:tag" content="hardware">
+    <meta property="article:tag" content="software">
+    <meta property="article:tag" content="steamdeck">
+    <meta property="article:tag" content="coffee">
+    <meta property="article:tag" content="mac">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Things I use">
+    <meta name="twitter:description" content="Tech
+
+
+Hardware
+
+ * MacBook Pro 2019 (Intel i7) - still going, despite the fans running at ~100% for as long as I can remember. I&#x27;ll be upgrading to Apple silicon this year, so this&#x27;ll become end-of-life.
+ * CalDigit TS-4 dock - this allows me to plug a single USB-C cable into any">
+    <meta name="twitter:url" content="https://davenicoll.com/things-i-use/">
+    <meta name="twitter:image" content="https://davenicoll.com/content/images/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Dave Nicoll">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="technology, hardware, software, steamdeck, coffee, mac">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1328">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "davenicoll.com",
+        "url": "https://davenicoll.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://davenicoll.com/favicon.ico",
+            "width": 48,
+            "height": 48
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Dave Nicoll",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/e5d7bd9493760fdfaa9fcc3ed07ba91c?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://davenicoll.com/author/dave/",
+        "sameAs": []
+    },
+    "headline": "Things I use",
+    "url": "https://davenicoll.com/things-i-use/",
+    "datePublished": "2024-01-09T18:24:15.000Z",
+    "dateModified": "2024-01-09T18:24:15.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://davenicoll.com/content/images/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg",
+        "width": 2000,
+        "height": 1328
+    },
+    "keywords": "technology, hardware, software, steamdeck, coffee, mac",
+    "description": "Tech\n\n\nHardware\n\n * MacBook Pro 2019 (Intel i7) - still going, despite the fans running at ~100% for as long as I can remember. I&#x27;ll be upgrading to Apple silicon this year, so this&#x27;ll become end-of-life.\n * CalDigit TS-4 dock - this allows me to plug a single USB-C cable into any device and instantly connect it to all my displays, peripherals and power. It wasn&#x27;t cheap, but definitely worth the price.\n * Magic Keyboard with Numeric Keypad - my preferred keyboard. I know, not mechanical, but my ",
+    "mainEntityOfPage": "https://davenicoll.com/things-i-use/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.72">
+    <link rel="alternate" type="application/rss+xml" title="davenicoll.com" href="https://davenicoll.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="092c7edf765c94505b7047fdb2" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://davenicoll.com/" crossorigin="anonymous"></script>
+    
+    <link href="https://davenicoll.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=95ad2aeaee"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=95ad2aeaee">
+    <style type='text/css'>
+    
+    a.gh-head-button,
+    #ghost-portal-root,
+    .footer-cta,
+    .gh-head-actions,
+    .gh-subscribe,
+    .gh-foot-menu, 
+    .gh-powered-by,
+    .cover-cta,
+    .social-item-facebook,
+    .social-item-twitter,
+    .header-right,
+    .copyright,
+    .footer-nav { display: none; }
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.css" integrity="sha512-Dqf5696xtofgH089BgZJo2lSWTvev4GFo+gA2o4GullFY65rzQVQLQVlzLvYwTo0Bb2Gpb6IqwxYWtoMonfdhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+    
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #c5c8c6;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: "JetBrains Mono", Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #1d1f21;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #7C7C7C;
+}
+
+.token.punctuation {
+	color: #c5c8c6;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.keyword,
+.token.tag {
+	color: #96CBFE;
+}
+
+.token.class-name {
+	color: #FFFFB6;
+	text-decoration: underline;
+}
+
+.token.boolean,
+.token.constant {
+	color: #99CC99;
+}
+
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.number {
+	color: #FF73FD;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #A8FF60;
+}
+
+.token.variable {
+	color: #C6C5FE;
+}
+
+.token.operator {
+	color: #EDEDED;
+    background-color: #1d1f21;
+}
+
+.token.entity {
+	color: #FFFFB6;
+	cursor: help;
+}
+
+.token.url {
+	color: #96CBFE;
+}
+
+.language-css .token.string,
+.style .token.string {
+	color: #87C38A;
+}
+
+.token.atrule,
+.token.attr-value {
+	color: #F9EE98;
+}
+
+.token.function {
+	color: #DAD085;
+}
+
+.token.regex {
+	color: #E9C062;
+}
+
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+</style>
+<style>:root {--ghost-accent-color: #ff572f;}</style>
+</head>
+
+<body class="post-template tag-technology tag-hardware tag-software tag-steamdeck tag-coffee tag-mac is-head-left-logo has-classic-feed">
+<div class="gh-site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner gh-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="https://davenicoll.com">
+                            davenicoll.com
+                    </a>
+                </div>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home"><a href="https://davenicoll.com/">Home</a></li>
+    <li class="nav-about"><a href="https://davenicoll.com/about/">About</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 17.5L12.5 12.5L17.5 17.5ZM14.1667 8.33333C14.1667 9.09938 14.0158 9.85792 13.7226 10.5657C13.4295 11.2734 12.9998 11.9164 12.4581 12.4581C11.9164 12.9998 11.2734 13.4295 10.5657 13.7226C9.85792 14.0158 9.09938 14.1667 8.33333 14.1667C7.56729 14.1667 6.80875 14.0158 6.10101 13.7226C5.39328 13.4295 4.75022 12.9998 4.20854 12.4581C3.66687 11.9164 3.23719 11.2734 2.94404 10.5657C2.65088 9.85792 2.5 9.09938 2.5 8.33333C2.5 6.78624 3.11458 5.30251 4.20854 4.20854C5.30251 3.11458 6.78624 2.5 8.33333 2.5C9.88043 2.5 11.3642 3.11458 12.4581 4.20854C13.5521 5.30251 14.1667 6.78624 14.1667 8.33333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
+            </div>
+        </div>
+    </header>
+
+    
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+            <article class="gh-article post tag-technology tag-hardware tag-software tag-steamdeck tag-coffee tag-mac">
+                    <header class="gh-article-header gh-canvas">
+                        <h1 class="gh-article-title">Things I use</h1>
+                            <figure class="gh-article-image">
+        <img
+            srcset="/content/images/size/w300/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 300w,
+                    /content/images/size/w720/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 720w,
+                    /content/images/size/w960/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 960w,
+                    /content/images/size/w1200/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 1200w,
+                    /content/images/size/w2000/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg 2000w,
+                    /content/images/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg"
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            src="/content/images/size/w1200/2024/01/farzad-p-xSl33Wxyc-unsplash.jpg"
+            alt="Things I use"
+        >
+    </figure>
+                    </header>
+
+                <section class="gh-content gh-canvas">
+                    <h2 id="tech">Tech</h2><h3 id="hardware">Hardware</h3><ul><li><strong>MacBook Pro 2019 (Intel i7)</strong> - still going, despite the fans running at ~100% for as long as I can remember. I'll be upgrading to Apple silicon this year, so this'll become end-of-life.</li><li><strong><a href="https://www.caldigit.com/thunderbolt-station-4/?ref=localhost">CalDigit TS-4 dock</a></strong> - this allows me to plug a single USB-C cable into any device and instantly connect it to all my displays, peripherals and power. It wasn't cheap, but definitely worth the price.</li><li><strong>Magic Keyboard with Numeric Keypad</strong> - my preferred keyboard. I know, not mechanical, but my all-day-typing fingers appreciate there's less travel on these keyboards. I could live without the numeric keys though.</li><li><strong>Logitech G900 gaming mouse</strong> - super comfortable all day long. And it has RGB!</li><li>Dual <strong>LG Ultrafine 32" IPS UHD 60Hz 4K monitors</strong> - I've been using two of these monitors mounted with this <a href="https://www.amazon.ca/gp/product/B0855ZBPXD/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1&ref=localhost">dual monitor stand</a> for a few years, and I've no complaints. A few years ago I tried some ultrawide alternatives, but found they didn't fit my workflow as well (multitasking didn't feel as natural). Recently, I've been contemplating replacing the dual screens with a large OLED. Maybe 2024 is the year.</li><li>My <a href="https://davenicoll.com/upgrading-my-home-nas/?ref=localhost"><strong>DIY NAS</strong></a><strong> </strong>- this stores all of my families data, backups, etc and runs several containers for home automation.</li><li><a href="https://store.steampowered.com/steamdeck?ref=localhost"><strong>SteamDeck</strong></a> (OG 256GB LCD) - gaming on the go, and a portable linux desktop in my backpack. Paired with the <a href="https://www.amazon.ca/gp/product/B0BJQ7F16T/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1&ref=localhost">UGREEN 145W 2500mAH power bank</a>, a USB-C dock, and the <a href="https://www.logitech.com/en-ca/products/keyboards/k400-plus-touchpad-keyboard.920-007119.html?ref=localhost">Logitech K400 keyboard and touchpad</a>.</li></ul><h3 id="software">Software</h3><!--kg-card-begin: markdown--><ul>
+<li><strong>IDE</strong>: <a href="https://code.visualstudio.com/?ref=localhost">VSCode</a>
+<ul>
+<li><strong>Extensions</strong>: <a href="https://github.com/davenicoll/vscode-recommended-extensions/blob/main/.vscode/extensions.json?ref=localhost">https://github.com/davenicoll/vscode-recommended-extensions/blob/main/.vscode/extensions.json</a></li>
+<li><strong>Themes</strong>: <a href="https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode&ref=localhost">SynthWave '84</a></li>
+<li><strong>Font</strong>: <a href="https://www.nerdfonts.com/font-downloads?ref=localhost">JetBrainsMono Nerd Font Mono</a></li>
+</ul>
+</li>
+<li><strong>Browser</strong>: Firefox
+<ul>
+<li><strong>Add-ons</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?ref=localhost">uBlock Origin</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?ref=localhost">Bitwarden</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/raindropio/?ref=localhost">Raindrop.io</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/?ref=localhost">Firefox Multi-Account Containers</a></li>
+</ul>
+</li>
+<li><strong>Terminal</strong>: <a href="https://iterm2.com/?ref=localhost">iTerm2</a>
+<ul>
+<li><strong>Shell</strong>: Zsh with <a href="https://ohmyz.sh/?ref=localhost">Oh My Zsh</a>, <a href="https://github.com/romkatv/powerlevel10k?ref=localhost">Powerlines 10K</a> and <a href="https://github.com/agkozak/zsh-z?ref=localhost">Zsh-Z</a></li>
+<li><strong>dotfiles</strong>: <a href="https://github.com/davenicoll/dotfiles?ref=localhost">https://github.com/davenicoll/dotfiles</a></li>
+</ul>
+</li>
+<li><strong>Notes</strong>: <a href="https://obsidian.md/?ref=localhost">Obsidian</a>
+<ul>
+<li><strong>Plug-ins</strong>: Obsidian Git, Advanced Tables, Icons, Linter, Table of Contents</li>
+</ul>
+</li>
+<li><strong>Cloud authentication</strong>: <a href="https://www.leapp.cloud/?ref=localhost">Leapp</a></li>
+<li><strong>Password Manager</strong>: <a href="https://bitwarden.com/?ref=localhost">Bitwarden</a></li>
+<li><strong>Bookmarks</strong>: <a href="https://raindrop.io/?ref=localhost">raindrop.io</a></li>
+<li><strong>Shortcuts &amp; launcher</strong>: <a href="https://www.raycast.com/?ref=localhost">Raycast</a></li>
+<li><strong>Remote working</strong>: <a href="https://www.around.co/?ref=localhost">Around</a></li>
+<li><strong>Pair programming</strong>: <a href="https://pop.com/?ref=localhost">Pop!</a></li>
+<li><strong>Containers</strong>: <a href="https://orbstack.dev/?ref=localhost">OrbStack</a> and <a href="https://www.portainer.io/?ref=localhost">Portainer</a></li>
+<li><strong>MacOS essentials</strong>: <a href="https://rectangleapp.com/?ref=localhost">Rectangle</a>, <a href="https://apps.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12&ref=localhost">CopyClip</a>, <a href="https://github.com/MonitorControl/MonitorControl?ref=localhost">MonitorControl</a></li>
+</ul>
+<!--kg-card-end: markdown--><h3 id="steamdeck">SteamDeck</h3><!--kg-card-begin: markdown--><ul>
+<li><strong>Plug-ins</strong>: <a href="https://github.com/SteamDeckHomebrew/decky-loader?ref=localhost">Decky Loader</a></li>
+<li><strong>Retro gaming</strong>: <a href="https://retrodeck.net/?ref=localhost">RetroDeck</a></li>
+<li><strong>Running non-steam games</strong>: <a href="https://lutris.net/?ref=localhost">Lutris</a></li>
+</ul>
+<!--kg-card-end: markdown--><h3 id="mobile-apps">Mobile apps</h3><!--kg-card-begin: markdown--><ul>
+<li><strong>Browser</strong>: <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&ref=localhost">Firefox</a>
+<ul>
+<li><strong>Add-ons</strong>: <a href="https://addons.mozilla.org/en-US/firefox/addon/toggle-web-developer-toolbar/?ref=localhost">View Source</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/google-search-ad-remover/?ref=localhost">Google Search Ad Remover</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/?ref=localhost">uBlock Origin</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/view-page-archive/?ref=localhost">Web Archives</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/chrome-ua-on-google-android/?ref=localhost">Chrome UA on Google for Firefox Android</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?ref=localhost">Bitwarden</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/consent-o-matic/?ref=localhost">Consent-O-Matic</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/?ref=localhost">Don't track me Google</a>. (Any add-on from the official Firefox add-on store can be installed on mobile by switching to Desktop mode).</li>
+</ul>
+</li>
+<li><strong>Hackernews</strong>: <a href="https://play.google.com/store/apps/details?id=com.simon.harmonichackernews&ref=localhost">Harmonic</a></li>
+<li><strong>Reading/Library</strong>: <a href="https://play.google.com/store/apps/details?id=com.overdrive.mobile.android.libby&ref=localhost">Libby</a></li>
+<li><strong>Password Manager</strong>: <a href="https://bitwarden.com/?ref=localhost">Bitwarden</a></li>
+<li><strong>MFA</strong>: <a href="https://authy.com/?ref=localhost">Authy</a> and Google Authenticator</li>
+</ul>
+<!--kg-card-end: markdown--><h2 id="coffee">Coffee</h2><!--kg-card-begin: markdown--><p>I once worked a few minutes away from a small, boutique coffee shop called Pot Kettle Black. Ever since, and mainly thanks to James Hoffman, I've become a bit of a coffee snob.</p>
+<ul>
+<li><strong>Machine</strong>: I use a <a href="https://www.amazon.ca/gp/product/B00CH9QWOU/ref=ppx_yo_dt_b_search_asin_title?ref=localhost">Breville Barista Express Espresso Machine</a>, which has been nothing short of life-changing.</li>
+<li><strong>Beans</strong>: <a href="https://www.hasbean.co.uk/products/ethiopia-23-045?ref=localhost">Hasbean Ethiopia: Edition 23.045</a>. This is hands-down the best coffee I've ever tasted. <em>&quot;Opening with a blast of blueberries and damsons, the punchy dark fruit has a layer of brown sugar sweetness underneath it. The clean finish has a twist of orange zest, which calls you back for that next sip.&quot;</em></li>
+</ul>
+<!--kg-card-end: markdown-->
+                    <aside class="gh-article-meta">
+                        <div class="gh-article-meta-inner">
+                                    <figure class="gh-author-image">
+                                        <img src="//www.gravatar.com/avatar/e5d7bd9493760fdfaa9fcc3ed07ba91c?s&#x3D;250&amp;d&#x3D;mm&amp;r&#x3D;x" alt="Dave Nicoll">
+                                    </figure>
+                                <div class="gh-article-meta-wrapper">
+                                <h4 class="gh-author-name">
+                                    <a href="/author/dave/">Dave Nicoll</a>
+                                </h4>
+                            <time class="gh-article-date" datetime="2024-01-09">Jan 9, 2024</time></div>
+                                <a class="gh-article-tag" href="https://davenicoll.com/tag/technology/" style="--tag-color: ">technology</a>
+                        </div>
+                    </aside>
+                </section>
+
+
+                <footer class="gh-article-footer gh-canvas">
+                    <nav class="gh-navigation">
+                        <div class="gh-navigation-previous">
+                                <a class="gh-navigation-link" href="/upgrading-my-home-nas/">← Previous</a>
+                        </div>
+
+                        <div class="gh-navigation-middle"></div>
+
+                        <div class="gh-navigation-next">
+                        </div>
+                    </nav>
+                </footer>
+            </article>
+    </div>
+</main>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <nav class="gh-foot-menu">
+                <ul class="nav">
+    <li class="nav-contact"><a href="https://davenicoll.com/contact/">Contact</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-copyright">
+                    davenicoll.com © 2024. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/built/main.min.js?v=95ad2aeaee"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre[class*=language-]').forEach(function (node) {
+            node.classList.add('line-numbers');
+        });
+        Prism.highlightAll();
+    });
+</script>
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3286122,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js" integrity="sha512-RDQSW3KoqJMiX0L/UBgwBmH1EmRYp8LBOiLaA8rBHIy+7OGP/7Gxg8vbt8wG4ZYd29P0Fnoq6+LOytCqx3cyoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-st608h+ZqzliahyzEpETxzU0f7z7a9acN6AFvYmHvpFhmcFuKT8a22TT5TpKpjDa3pt3Wv7Z3SdQBCBdDPhyWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-BttltKXFyWnGZQcRWj6osIg7lbizJchuAMotOkdLxHxwt/Hyo+cl47bZU0QADg+Qt5DJwni3SbYGXeGMB5cBcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-fTl/qcO1VgvKtOMApX2PdZzkziyr2stM65GYPLGuYMnuMm1z2JLJG6XVU7C/mR+E7xBUqCivykuhlzfqxXBXbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-/kVH1uXuObC0iYgxxCKY41JdWOkKOxorFVmip+YVifKsJ4Au/87EisD1wty7vxN2kAhnWh6Yc8o/dSAXj6Oz7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
